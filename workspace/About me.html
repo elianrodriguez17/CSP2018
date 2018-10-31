@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    text-align: center;
+    background:lightyellow;
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color:Black;
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Portfolio</h1>
+</div>
+
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="About me.html">Portfolio</a>
+  <a href="Social.html">Social Media</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>My Life </h2>
+<img src ="images/running3mile.jpg" width="200" length="150">
+      <p>Running at Mt. Sac </p>
+      <p>Cross Country is one of the few sports that I do. My Senior year will be the only year that I do this sport.</p>
+    </div>
+    <div class="card">
+      <h2> One of my Hobbies </h2>
+      <h5> </h5>
+<img src ="images/ronaldo.gif" width="450" length="450">
+      <p>Ronaldo's overhead goal vs Juventus </p>
+      <p>Soccer is a main hobby that I do. I started playing at the age of 10 when I joined my first soccer team. Ever since then I've been playing and watching the sport which I've enjoyed doing. </p>
+    </div>
+  </div>
+  <div class="toprightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+<img src ="images/morrobay.PNG" width="300" length="300">
+      <p>I'm Elian Rodriguez and I am Senior that goes to Shafter High School. Currently, I'm 17 years of age and will turn 18 on January 18th. I mostly watch soccer and combat sports such as the UFC and Boxing.</p>
+    </div>
+<h2><a href ="https://scratch.mit.edu/projects/249908801/#fullscreen">Scratch Game</a></h2>
+<img src ="images/scratch.PNG" width="300" length="300">
+</body>
+</html>
